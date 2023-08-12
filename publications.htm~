@@ -1,0 +1,143 @@
+<table border="0" width="1000" cellpadding="10">
+<tr>
+
+
+<td width="60%" valign="top">
+
+
+<h1 align="center"> <FONT COLOR="15317E"> Publications </font></h1>
+
+<i><font size="5"><font color="B22222">Some of publications use my previous names: I. Iourokina, J. Tixtinskaya</font></font></i>
+
+<h3>Journal Articles</h3>
+
+<p align="justify">
+
+O. Roderick, M. Anitescu and Y. Peet, "Proper Orthogonal Decompositions in Multifidelity Uncertainty Quantification of Complex Simulation Models'',  <i>Int. J. Comput. Math.</i>, in review<br>
+<br>
+
+Y. Peet and P. Fisher, "Legendre Spectral Element Method with Nearly Incompressible Materials", <i>Europ. J. Mech. - A/Solids</i>, in review<br>
+<br>
+R. Kamyar, M. Peet and Y. Peet (2013), "Solving Large-Scale Robust Stability Problems by
+Exploiting the Parallel Structure of Polya's Theorem", <i>IEEE Transactions on Automatic Control</i>, August issue, to appear<br>
+<br>
+Y. Peet and P. Fischer (2012), "Stability Analysis of Interface Temporal Discretization in Grid Overlapping Methods", <i>SIAM J. Numer. Anal.</i>, vol. 50, No. 6, pp. 3375-3401 <a href=Peet_Fischer_SINUM.pdf>[.pdf]</a><br>
+<br>
+Y. Peet and P. Sagaut (2009) "Theoretical Prediction of Turbulent Skin Friction on Geometrically Complex Surfaces", <i>Physics of Fluids</i>, vol. 21, 115105 <a href=PHF_Peet_Sagaut.pdf>[.pdf]</a><br>
+<br>
+Y. Peet, P. Sagaut and Y. Charron (2009), "Pressure Loss Reduction in Hydrogen Pipelines by Surface Restructuring", <i>Int. Journal of Hydrogen Energy</i>, vol. 34, pp. 8964-8973 <a href=JHE-2009.pdf>[.pdf]</a><br>
+<br>
+Y. Peet and S.K. Lele (2008) "Computational Framework for Coupling Compressible and Low Mach Number Codes", <i>AIAA Journal</i>, vol. 46, No. 8, pp. 1990-2001 <a href=AIAA-32884-661.pdf>[.pdf]</a><br>
+<br>
+I. Iourokina (1999) "Numerical Method for Large Eddy Simulations based on Smagorinsky Model",
+<a href="http://www.mathnet.ru/php/journal.phtml?jrnid=mm&option_lang=eng"><i>Journal of Mathematical Modeling</i></a>, Russian Academy of Sciences, Vol. 11, No. 4, pp. 83-99, in Russian  <a href=matmod_1999_1104_iourokina.pdf>[.pdf]</a>
+
+<h3>Peer-Reviewed Conference Papers</h3>
+
+<p align="justify">
+Y. Peet, P. Fischer, G. Conzelmann and V. Kotamarthi (2013),"Actuator Line Aerodynamics Model with Spectral Elements", AIAA paper 2013-1210, 51st Aerospace Sciences Meeting, Grapevine, TX, January 2013 <a href=AIAA_2013_FinalWind.pdf>[.pdf]</a><br>
+<br>
+J. Culak, Y. Peet and D. L. Chopp (2011), "Smooth Mesh Generation for Numerical Analysis of Blood Vessel
+Fluid Flow", Proceedings of the ASME 2011 Summer Bioengineering Conference,
+Farmington, PA, June 2011 (<i>finalist for the on-site BS student paper competition</i>) <a href=juraj.pdf>[.pdf]</a> <br>
+<br>
+Y. Peet, D. L. Chopp, S. H. Davis and M. J. Miksis (2011), "Computational Study of Unsteady Viscous Flows in Flexible Vessels", Proceedings of the ASME 2011 Summer Bioengineering Conference,
+Farmington, PA, June 2011 <a href=ASME_biovessel.pdf>[.pdf]</a><br>
+<br>
+M. M. Peet and Y. Peet (2010) "A Parallel-Computing Solution for Optimization of Polynomials", 2010 American Control Conference - ACC2010, Baltimore, MA, July 2010
+<a href=polya_acc.pdf>[.pdf]</a><br>
+<br>
+Y. Peet and P. Fischer (2010) "Conjugate Heat Transfer LES Simulations in Application to Wire-Wrapped Fuel Pins'',  AIAA paper 2010-4318, 40th AIAA Fluid Dynamics Conference and Exhibit, Chicago, IL, June 2010 <a href=aiaa_2010.pdf>[.pdf]</a><br>
+<br>
+Y. Peet, P. Sagaut and Y. Charron (2008) "Turbulent Drag Reduction Using Sinusoidal Riblets With Triangular Cross-Section", AIAA paper 2008-3745,
+38th AIAA Fluid Dynamics Conference and Exhibit, Seattle, WA, June 2008 <a href=aiaa_2008.pdf>[.pdf]</a><br>
+<br>
+Y. Peet and S.K.Lele (2008) "Near Field of Film Cooling Jet Issued Into a Flat Plate Boundary Layer: LES Study",   
+ASME paper GT2008-50420, ASME Turbo Expo 2008, Berlin, Germany, June 2008 <a href=GT2008-50420.pdf>[.pdf]</a><br>
+<br> 
+Y. Peet. P. Sagaut and Y. Charron (2007) "Towards Large Eddy Simulation of Turbulent Drag Reduction Using Sinusoidal Riblets",
+WSEAS paper 565-355, 5th IASME/WSEAS International Conference on Fluid Mechanics and Aerodynamics, Athens, Greece, August 2007 <i>(invited paper)</i> <a href=wseas_2007_565-355.pdf>[.pdf]</a> <br>
+<br>
+I. Iourokina and S.K. Lele (2006) "Large Eddy Simulation of Film-Cooling
+Flow above a Flat Plate from Inclined Cylindrical Holes", 
+ASME paper FEDSM2006-98282, 2006 ASME Joint U.S.-European Fluids Engineering
+Summer Meeting, Miami, FL, July 2006 <a href=fedsm_2006-98282.pdf>[.pdf]</a> <br>
+<br>
+I. Iourokina and S.K. Lele (2006) "Large Eddy Simulation of Film-Cooling Flows Above the Flat Surface
+with a Large Plenum and Short Exit Holes",  AIAA paper 2006-1102, 44th Aerospace Sciences Meeting and Exhibit, Reno, NV, January 2006  <a href=aiaa_2006-1102.pdf>[.pdf]</a> <br>
+<br>
+I. Iourokina and S.K. Lele (2005) "Towards Large Eddy Simulation of Film-Cooling Flows on a Model Turbine Blade Leading Edge", 
+AIAA paper 2005-0670, 43rd Aerospace Sciences Meeting and Exhibit, Reno, NV, January 2005 <a href=aiaa_2005-0670.pdf>[.pdf]</a> <br>
+<br>
+I. Iourokina (2000) "Comparison of 2D and 3D Supersonic Shear Layer
+Calculations Using Large Eddy Simulation Method", Proceedings of the 4th International Seminar on RRDPAE, Warsaw, Poland, December 2000 <a href=rrdpae_2000_iourokina.pdf>[.pdf]</a><br>
+<br>
+J. Tixtinskaya (1999) "An Experience of Using the Method of Direct Numerical Simulation of Large Scale Turbulence at the Computation of Supersonic Turbulent Shear Layer ", Proceedings of the 3rd International Seminar on RRDPAE, Warsaw, Poland, Research Bulletin No. 9, Part II, pp. 213-219, December 1999 <i>(best student paper award)</i> <a href=rrdpae_1999_tixtinskaya.pdf>[.pdf]</a><br>
+<br>
+J. Tixtinskaya (1997)   "Investigation of Numerical Method for Solution of Favre-Averaged Navier-Stokes Equations System",
+Proceedings of the 2nd International Seminar on RRDPAE, Warsaw, Poland, Research Bulletin No. 7, Part II, pp. 213-218, December 1997 <i>(best student paper award)</i> <a href=rrdpae_1997_tixtinskaya.pdf>[.pdf]</a> 
+<br>
+
+
+<h3>Books</h3>
+
+Y. Peet  (2009) ``Film Cooling from Inclined Holes: Computational Study with Large Eddy Simulations'', VDM Verlag Dr. Muller Aktiengesellschaft & Co. KG, Germany, ISBN: 978-3-639-20555-8
+
+<p align="justify">
+
+
+
+<h3>Theses</h3>
+
+<p align="justify">
+
+
+Y. Peet (2006) "Film Cooling from Inclined Cylindrical
+Holes using Large Eddy Simulations", Department of Aeronautics & Astronautics, Stanford University,
+Ph.D. Thesis <a href=thesis_ypeet_single.pdf>[.pdf]</a><br>
+<br>
+I. Iourokina (2000) "Organizational Diagnostics During the Design of Organizational Structure", Deparment of Management, 
+State University - Higher School of Economics, Master's Thesis<br>
+<br>
+I. Iourokina (1999) "Application of the Method of Large Eddy Simulations to the Computation of High-Speed
+Shear Layers", Department of Aeromechanics and Flight Engineering, Moscow Institute of Physics and Technology, 
+Master's Thesis
+<br>
+
+<h3>Reports and Research Briefs</h3>
+
+<p align="justify">
+
+
+Y. Peet and P. Sagaut (2008) "Turbulent Drag Reduction With
+Three-Dimensional Structured Surfaces", ANR project PAN-H/READY
+Final Report<br>
+<br>
+Y. Peet and P. Sagaut (2007) "Turbulent Drag Reduction Using
+Three-Dimensional Structured Surfaces", ANR project PAN-H/READY
+Annual Report<br>
+<br>
+Y. Peet and P. Sagaut (2006) "Turbulent Drag Reduction Using Sinusoidal
+Riblets", ANR project PAN-H/READY Annual Report<br>
+<br>
+K. Mattsson, Y. Iourokina and F. Ham (2005) "Stable and Accurate Coupling
+between Compressible and Incompressible Flow Solvers",
+Annual
+Research Briefs, Center for Turbulence Research, Stanford
+University, pp. 31-41 <a href=ctr_2005_mattsson-et-al.pdf>[.pdf]</a> <br>
+<br>
+Y. Tixtinskaya (1998) "Basic Principles of the Method of Large Eddy Simulations",
+Numerical Modeling in Problems of Aerodynamics and Ecology, MIPT Research Briefs,  pp. 78-89, in Russian<br>
+<br>
+Y. Tixtinskaya (1998) "Choice of Optimal Approximation of Diffusion Terms for Numerical Solution of Navier-Stokes Equations",<br>
+Numerical Modeling in Problems of Aerodynamics and Ecology, MIPT
+Research Briefs, pp. 67-77, in Russian
+<br>
+
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

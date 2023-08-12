@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<title>Yulia T. Peet's homepage</title>
+
+<meta name="author"
+content="Yulia T. Peet">
+
+</head>
+
+<body>
+
+<a href ="link.htm#C1" target="showframe">Home</a><br>
+<a href ="publications.htm" target="showframe"> Publications</a><br>
+<a href ="research.htm", target="showframe"> Research </a><br>
+<a href ="movies.htm", target="showframe"> Movie gallery </a><br>
+</body>
+</html>
+
