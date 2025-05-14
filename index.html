@@ -16,10 +16,12 @@
     
     nav {
       width: 300px;
+      min-width: 300px;          /* Prevent shrinking */
+      max-width: 300px;          /* Prevent growing */
       background-color: #f0f0f0;
       padding: 20px;
       box-sizing: border-box;
-     border-right: 1px solid #ccc;
+      border-right: 1px solid #ccc;
     }
     main {
       padding: 20px;
