@@ -23,9 +23,9 @@
 </head>
 <body>
   <nav>
-    <a href="/home" data-page="home.html">Home</a><br>
-    <a href="/publications" data-page="publications.html">Publications</a><br>
-    <a href="/research" data-page="research.html">Research</a><br>
+    <a href="#/home" data-page="home.html">Home</a><br>
+    <a href="#/publications" data-page="publications.html">Publications</a><br>
+    <a href="#/research" data-page="research.html">Research</a><br>
   </nav>
 
   <main id="content">
@@ -33,48 +33,30 @@
   </main>
 
   <script>
-    async function loadPage(pageFile, urlPath, updateHistory = true) {
-      console.log(`Loading ${pageFile}`);
+    const routes = {
+      '/home': 'home.html',
+      '/publications': 'publications.html',
+      '/research': 'research.html',
+      '/': 'home.html', // default route
+    };
+
+    async function loadPage() {
+      const path = location.hash.slice(1) || '/';
+      const pageFile = routes[path] || 'home.html';
+
       try {
         const res = await fetch(pageFile);
         if (!res.ok) throw new Error(`Failed to fetch ${pageFile}`);
         const html = await res.text();
         document.getElementById('content').innerHTML = html;
-        if (updateHistory) {
-          history.pushState({ pageFile }, '', urlPath);
-        }
       } catch (err) {
         console.error(err);
         document.getElementById('content').innerHTML = `<h2>404 - Page not found</h2>`;
       }
     }
 
-    // Handle clicks on navigation links
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const pageFile = link.getAttribute('data-page');
-        const urlPath = link.getAttribute('href');
-        loadPage(pageFile, urlPath);
-      });
-    });
-
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', e => {
-      if (e.state && e.state.pageFile) {
-        loadPage(e.state.pageFile, location.pathname, false);
-      }
-    });
-
-    // Initial load: determine which page to show based on URL
-    const pathToFile = {
-      '/': 'home.html',
-      '/home': 'home.html',
-      '/publications': 'publications.html',
-      '/research': 'research.html',
-    };
-    const initialPath = location.pathname;
-    loadPage(pathToFile[initialPath] || 'home.html', initialPath, false);
+    window.addEventListener('hashchange', loadPage);
+    window.addEventListener('DOMContentLoaded', loadPage);
   </script>
 </body>
 </html>
