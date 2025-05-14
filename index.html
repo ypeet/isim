@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    nav { width: 200px; background-color: #f0f0f0; padding: 20px; box-sizing: border-box; }
+    main { padding: 20px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html" data-page="home.html">Home</a>
+  </nav>
+
+  <main id="content">
+    <!-- Content will load here -->
+  </main>
+
+  <script>
+    async function loadPage(page) {
+      try {
+        const res = await fetch(page);
+        const html = await res.text();
+        document.getElementById('content').innerHTML = html;
+      } catch (err) {
+        document.getElementById('content').innerHTML = `<h2>404 - Page not found</h2>`;
+      }
+    }
+
+    document.querySelector('nav a').addEventListener('click', function(e) {
+      e.preventDefault();
+      loadPage(this.getAttribute('data-page'));
+    });
+
+    // Initial page load
+    loadPage('home.html');
+  </script>
+</body>
+</html>
