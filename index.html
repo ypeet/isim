@@ -10,7 +10,9 @@
 </head>
 <body>
   <nav>
-    <a href="home.html" data-page="home.html">Home</a>
+    <a href="#" data-page="home.html">Home</a><br>
+    <a href="#" data-page="publications.html">Publications</a><br>
+    <a href="#" data-page="research.html">Research</a><br>
   </nav>
 
   <main id="content">
@@ -18,22 +20,31 @@
   </main>
 
   <script>
+    // Log any errors from the fetch requests
     async function loadPage(page) {
+      console.log(`Loading page: ${page}`);  // Debugging log to check which page is being fetched
+
       try {
-        const res = await fetch(page);
-        const html = await res.text();
-        document.getElementById('content').innerHTML = html;
+        const res = await fetch(page);  // Attempt to fetch the page
+        if (!res.ok) throw new Error(`Failed to fetch ${page}: ${res.statusText}`);
+        const html = await res.text();  // Get the HTML content
+        document.getElementById('content').innerHTML = html;  // Insert content into the page
       } catch (err) {
-        document.getElementById('content').innerHTML = `<h2>404 - Page not found</h2>`;
+        console.error(err);  // Log any errors in the console
+        document.getElementById('content').innerHTML = `<h2>Error loading ${page}</h2>`;
       }
     }
 
-    document.querySelector('nav a').addEventListener('click', function(e) {
-      e.preventDefault();
-      loadPage(this.getAttribute('data-page'));
+    // Add event listeners to all links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();  // Prevent the default anchor behavior
+        const page = this.getAttribute('data-page');
+        loadPage(page);  // Load the page dynamically
+      });
     });
 
-    // Initial page load
+    // Load the initial page (home.html)
     loadPage('home.html');
   </script>
 </body>
