@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Test</title>
+  <title>Yulia T. Peet's Website</title>
   <style>
-    body { font-family: Arial, sans-serif; }
-    nav { width: 200px; background-color: #f0f0f0; padding: 20px; box-sizing: border-box; }
-    main { padding: 20px; }
+    body {
+      display: flex;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+    main {
+      padding: 20px;
+      flex-grow: 1;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#" data-page="home.html">Home</a><br>
-    <a href="#" data-page="publications.html">Publications</a><br>
-    <a href="#" data-page="research.html">Research</a><br>
+    <a href="/home" data-page="home.html">Home</a><br>
+    <a href="/publications" data-page="publications.html">Publications</a><br>
+    <a href="/research" data-page="research.html">Research</a><br>
   </nav>
 
   <main id="content">
@@ -20,32 +33,48 @@
   </main>
 
   <script>
-    // Log any errors from the fetch requests
-    async function loadPage(page) {
-      console.log(`Loading page: ${page}`);  // Debugging log to check which page is being fetched
-
+    async function loadPage(pageFile, urlPath, updateHistory = true) {
+      console.log(`Loading ${pageFile}`);
       try {
-        const res = await fetch(page);  // Attempt to fetch the page
-        if (!res.ok) throw new Error(`Failed to fetch ${page}: ${res.statusText}`);
-        const html = await res.text();  // Get the HTML content
-        document.getElementById('content').innerHTML = html;  // Insert content into the page
+        const res = await fetch(pageFile);
+        if (!res.ok) throw new Error(`Failed to fetch ${pageFile}`);
+        const html = await res.text();
+        document.getElementById('content').innerHTML = html;
+        if (updateHistory) {
+          history.pushState({ pageFile }, '', urlPath);
+        }
       } catch (err) {
-        console.error(err);  // Log any errors in the console
-        document.getElementById('content').innerHTML = `<h2>Error loading ${page}</h2>`;
+        console.error(err);
+        document.getElementById('content').innerHTML = `<h2>404 - Page not found</h2>`;
       }
     }
 
-    // Add event listeners to all links
+    // Handle clicks on navigation links
     document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();  // Prevent the default anchor behavior
-        const page = this.getAttribute('data-page');
-        loadPage(page);  // Load the page dynamically
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const pageFile = link.getAttribute('data-page');
+        const urlPath = link.getAttribute('href');
+        loadPage(pageFile, urlPath);
       });
     });
 
-    // Load the initial page (home.html)
-    loadPage('home.html');
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', e => {
+      if (e.state && e.state.pageFile) {
+        loadPage(e.state.pageFile, location.pathname, false);
+      }
+    });
+
+    // Initial load: determine which page to show based on URL
+    const pathToFile = {
+      '/': 'home.html',
+      '/home': 'home.html',
+      '/publications': 'publications.html',
+      '/research': 'research.html',
+    };
+    const initialPath = location.pathname;
+    loadPage(pathToFile[initialPath] || 'home.html', initialPath, false);
   </script>
 </body>
 </html>
